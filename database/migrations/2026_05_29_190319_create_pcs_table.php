@@ -19,7 +19,7 @@ return new class extends Migration
                 ->restrictOnDelete();
             $table->smallInteger('ram');
             $table->smallInteger('hd');
-            $table->decimal('price');
+            $table->decimal('price', $total = 8, $decimal = 2);
         });
     }
 

@@ -20,7 +20,7 @@ class PcFactory extends Factory
         return [
             'ram' => fake()->numberBetween(8, 64),
             'hd' => fake()->numberBetween(100, 30000),
-            'price' => fake()->randomFloat(2, 1000.00),
+            'price' => fake()->randomFloat(2, 1000.00, 100000.00),
         ];
     }
 }
